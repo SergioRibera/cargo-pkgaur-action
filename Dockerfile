@@ -1,7 +1,7 @@
 # Using the `rust-musl-builder` as base image, instead of 
 # the official Rust toolchain
 #* ================== Stage 1: 🦀 Recipe =======================
-FROM clux/muslrust:1.80.0-stable AS builder
+FROM clux/muslrust:1.80.1-stable AS builder
 WORKDIR /app
 
 #* ===================== Stage 2: 🏗️ Build =============
