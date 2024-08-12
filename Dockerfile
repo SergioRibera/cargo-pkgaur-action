@@ -9,7 +9,7 @@ RUN git clone https://github.com/SergioRibera/cargo-pkgbuild -b dev /app && \
     cargo build --release --target x86_64-unknown-linux-musl
 
 #* ===================== Stage 3: ✅ Runtime =====================
-FROM archlinux:base-devel-20240721.0.248532 AS runtime
+FROM archlinux:base-devel-20240804.0.251467 AS runtime
 # copy binary
 COPY --from=builder /app/target/x86_64-unknown-linux-musl/release/cargo-aur /
 
